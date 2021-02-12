@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="98" started-at="2021-02-08T11:12:21Z" finished-at="2021-02-08T11:12:21Z">
+  <suite name="Default suite" duration-ms="68" started-at="2021-02-12T05:18:30Z" finished-at="2021-02-12T05:18:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="98" started-at="2021-02-08T11:12:21Z" finished-at="2021-02-08T11:12:21Z">
-      <class name="JavaStream.JavaStream">
-        <test-method status="PASS" signature="numbers()[pri:0, instance:JavaStream.JavaStream@25b485ba]" name="numbers" duration-ms="69" started-at="2021-02-08T16:42:21Z" finished-at="2021-02-08T16:42:21Z">
+    <test name="Default test" duration-ms="68" started-at="2021-02-12T05:18:30Z" finished-at="2021-02-12T05:18:30Z">
+      <class name="JavaStream.JavaStream2">
+        <test-method status="PASS" signature="ReverseString()[pri:0, instance:JavaStream.JavaStream2@25b485ba]" name="ReverseString" duration-ms="29" started-at="2021-02-12T10:48:30Z" finished-at="2021-02-12T10:48:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- numbers -->
-      </class> <!-- JavaStream.JavaStream -->
+        </test-method> <!-- ReverseString -->
+        <test-method status="PASS" signature="Strtswith()[pri:0, instance:JavaStream.JavaStream2@25b485ba]" name="Strtswith" duration-ms="8" started-at="2021-02-12T10:48:30Z" finished-at="2021-02-12T10:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Strtswith -->
+        <test-method status="PASS" signature="sort()[pri:0, instance:JavaStream.JavaStream2@25b485ba]" name="sort" duration-ms="10" started-at="2021-02-12T10:48:30Z" finished-at="2021-02-12T10:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sort -->
+      </class> <!-- JavaStream.JavaStream2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

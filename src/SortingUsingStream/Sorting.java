@@ -19,13 +19,16 @@ public class Sorting {
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 		
 		
-		driver.findElement(By.xpath("//tr/th[1]")).click();
+		
 		//capture All the webelements into list
 		List<WebElement> ElementList = driver.findElements(By.xpath("//tr/td[1]"));
 		//capture texts of all webelement into new()orginal list
 		List<String>OriginalList=ElementList.stream().map(s->s.getText()).collect(Collectors.toList());
 		//sort in the orginal list of step 3 ->sorted list 
+		driver.findElement(By.xpath("//tr/th[1]")).click();
 		List<String> sortedList= OriginalList.stream().sorted().collect(Collectors.toList());
+		System.out.println(OriginalList);
+		System.out.println(sortedList);
 		//compare orginal list vs sorted list
 		Assert.assertTrue(OriginalList.equals(sortedList));
 		
