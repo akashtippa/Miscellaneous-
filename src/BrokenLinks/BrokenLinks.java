@@ -1,18 +1,13 @@
 package BrokenLinks;
-
-import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 public class BrokenLinks {
@@ -40,7 +35,6 @@ public class BrokenLinks {
 			int ResponseCode =conn.getResponseCode();
 			System.out.println(ResponseCode);
 			a.assertTrue(ResponseCode<400,"the link with text:" +link.getText()+ " is the broken link:" +ResponseCode);
-			
 		}
 		a.assertAll();
 //			if(ResponseCode>400)

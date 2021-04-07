@@ -1,6 +1,4 @@
 package JavaStream;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -38,5 +36,13 @@ public class JavaStream2 {
 			String name = "Akash Tippa";
 			Stream.of(name).map(s->new StringBuilder(name).reverse()).forEach(s->System.out.println(s));
 		}
+		
+		@Test
+		public void flatMap()
+		{
+			List<String> empList = Arrays.asList("Jeff","Nick","Peter","QA");
+					
+		}
+		
 
 }
